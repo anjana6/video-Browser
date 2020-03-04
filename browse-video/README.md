@@ -1,4 +1,4 @@
-# video-browser
+# browse-video
 
 ## Project setup
 ```
