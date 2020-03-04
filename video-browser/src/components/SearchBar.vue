@@ -1,0 +1,22 @@
+<template>
+    <div>
+        <!-- <input v-on:input="onInput"/> -->
+        <input @input="onInput"/>
+    </div>
+</template>
+ 
+<script>
+export default {
+    name:'SearchBar',
+    methods:{
+        onInput: function(e) {
+            //console.log(e.target.value)
+            this.$emit('termChange',e.target.value);
+        }
+    }
+ }
+</script>
+
+<style lang="stylus" scoped>
+
+</style>
